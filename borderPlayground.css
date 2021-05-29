@@ -147,8 +147,10 @@ input[type='range']::-moz-range-thumb {
 .box {
   width: 230;
   height: 230;
-  text-align: center;
-  line-height: 14em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 .box1 {
