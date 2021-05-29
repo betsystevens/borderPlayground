@@ -6,6 +6,8 @@
 
 ---
 
+[demo](https://betsystevens.github.io/borderPlayground/)
+
 I'm so happy I signed up for this course. I have not been disappointed.
 Josh had a Border Playground widget to demonstrate different kinds of borders.  
 For fun I re-created his widget using HTML, CSS and a bit of JavaScript.  
