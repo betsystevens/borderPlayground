@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playgrounds</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./borderPlayground.css">
+</head>
+<body>
+  <header>
+    <h1>Border Playground</h1>
+    <h3>CSS for JavaScript Developers</h3>
+    <p>by</p>
+    <h3>Josh Comeau</h3>
+  </header>
+  <main>
+    <section>
+      <article>
+        <header class="borders">
+          <div class="borderColor">
+            <p>Border Color</p>
+            <div id="colorRadios">
+                <label class="container">
+                  <input type="radio" name="color" value="crimson">
+                  <span class="checkMark" style="background-color: crimson;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="tomato">
+                  <span class="checkMark" style="background-color:tomato;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="gold">
+                  <span class="checkMark" style="background-color:gold;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="lawngreen">
+                  <span class="checkMark" style="background-color:lawngreen;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="deepskyblue">
+                  <span class="checkMark" style="background-color:deepskyblue;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="magenta">
+                  <span class="checkMark" style="background-color:magenta;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="black">
+                  <span class="checkMark" style="background-color:black;"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="color" value="gray">
+                  <span class="checkMark" style="background-color:gray;"></span>
+                </label>
+            </div>
+          </div>
+          <div>
+            <p>Border Thickness</p>
+            <input type="range" id="borderWidth" 
+                    min="1" max="24" value="6">
+          </div>
+          <div>
+            <p>Border Radius</p>
+            <input type="range" id="borderRadius" 
+                    min="0" max="50" step="0.5" value="0">
+          </div>
+        </header>
+        <section class="boxes">
+          <div class="box box1">Solid</div>
+          <div class="box box2">Dotted</div>
+          <div class="box box3">Dashed</div>
+          <div class="box box4">Double</div>
+          <div class="box box5">Groove</div>
+          <div class="box box6">Ridge</div>
+          <div class="box box7">Inset</div>
+          <div class="box box8">Outset</div>
+          <div class="box box9">Mixed</div>
+        </section>
+      </article>
+    </section>
+    <aside></aside>
+
+  </main>
+  <footer></footer>
+  <script src="borderPlayground.js"></script>
+</body>
+</html>
