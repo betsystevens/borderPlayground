@@ -88,7 +88,6 @@ header.borders > div {
   left: 0;
   height: 13px;
   width: 13px;
-  /* background-color: #ddd; */
   border-radius: 50%;
 }
 /*
@@ -97,9 +96,11 @@ header.borders > div {
  ***********************
 */
 input[type='range'] {
-  -webkit-appearance: none;
-  width: 100%;
+  -webkit-appearance: none; /* Hides slider so custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* removes white background */
 }
+/* Track styles for Chrome */
 input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   cursor: pointer;
@@ -107,6 +108,15 @@ input[type='range']::-webkit-slider-runnable-track {
   background-color: var(--myMediumGray);
   border-radius: 10px;
 }
+/* Track styles for Firefox */
+input[type='range']::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  height: 3px;
+  background-color: var(--myMediumGray);
+  border-radius: 10px;
+}
+/* Thumb styles for Chrome */
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1.5px solid var(--myMediumGray);
@@ -116,6 +126,16 @@ input[type='range']::-webkit-slider-thumb {
   background-color: var(--myLightGray);
   cursor: pointer;
   margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* Thumb Styles For Firefox */
+input[type='range']::-moz-range-thumb {
+  border: 1.5px solid var(--myMediumGray);
+  height: 13px;
+  width: 14px;
+  border-radius: 40%;
+  background-color: var(--myLightGray);
+  cursor: pointer;
 }
 
 .boxes {
