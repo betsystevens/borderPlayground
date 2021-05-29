@@ -1,8 +1,8 @@
 # Border Playground Widget
 
-## Re-created from Josh Comeau's _amazing course_
+### Re-created from Josh Comeau's _amazing course_
 
-## CSS for JavaScript Developers
+### CSS for JavaScript Developers
 
 ---
 
